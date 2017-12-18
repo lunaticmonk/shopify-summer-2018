@@ -7,6 +7,7 @@ const Bluebird = require('bluebird');
 const request =  Bluebird.promisifyAll(require("request"), { multiArgs: true});
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 8000;
 
 // -------- Function to get the responses from all the pages available --------//
 function bakeAPIResponse(baseURL) {
@@ -161,5 +162,5 @@ app.get('/extra', (req, res) => {
   });
 });
 
-app.listen(5000);
-console.log('listening to 5000');
+app.listen(port);
+console.log(`Listening to ${port}`);
