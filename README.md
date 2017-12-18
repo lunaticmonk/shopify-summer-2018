@@ -8,10 +8,12 @@
 
 #### To check it locally:
 
-```git clone ```
+```git clone git@github.com:sumedh123/shopify-summer-2018.git```
 
-```cd ```
+```cd shopify-summer-2018```
 
 ```npm install```
 
 ```nodemon index.js```
+
+Used all the nodes according to pagination provided.
